@@ -12,7 +12,7 @@ body {
     background: #333;
 }
 
-.container {
+.contnr {
     position: relative;
     width: 100%;
     display: flex;
@@ -20,7 +20,7 @@ body {
     align-items: center;
 }
 
-.container .ring {
+.contnr .ring {
     position: relative;
     width: 150px;
     height: 150px;
@@ -40,24 +40,79 @@ body {
     }
 }
 
-.container .ring::before {
-    content: "";
+.contnr .ring::before {
+    content: '';
     position: absolute;
     top: 12px;
     right: 12px;
     border-radius: 50%;
     width: 15px;
     height: 15px;
-    background: #24ecff;
-    box-shadow: 0 0 0 5px #24ecff22, 0 0 0 10px #24ecff33, 0 0 0 20px #24ecff11, 0 0 0 20px #24ecff, 0 0 0 50px #24ecff;
+    background-color: #24ecff;
+    box-shadow: -1px 2px 20px 13px rgba(0, 144, 255, 0.3);
 }
 
-.container .ring:nth-child(3) {
+.contnr .ring:nth-child(3) {
+    animation: animate2 4s linear infinite;
+    animation-delay: -3s;
     position: absolute;
     top: -66.66px;
+    border-top: 4px solid transparent;
+    border-left: 4px solid #fc0202;
 }
 
-.container p {
+.contnr p {
     position: absolute;
     color: #fff;
+    font-size: 1.5em;
+    bottom: -80px;
+    letter-spacing: 1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+
+@keyframes animate2 {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.contnr .ring:nth-child(2) {
+    animation: animate2 4s linear infinite;
+    animation-delay: -1s;
+    border-top: 4px solid transparent;
+    border-left: 4px solid #93ff2d;
+}
+
+.contnr .ring:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    top: initial;
+    bottom: 12px;
+    left: 12px;
+    /* right: 12px; */
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: #fc0202;
+    box-shadow: -1px 2px 20px 13px rgba(255, 0, 17, 0.365);
+    /* box-shadow: 0 0 0 5px #fc0202, 0 0 0 10px #24ecff33, 0 0 0 20px #fc020211, 0 0 0 20px #fc0202, 0 0 0 50px #fc0202; */
+}
+
+.contnr .ring:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: initial;
+    bottom: 12px;
+    left: 12px;
+    /* right: 12px; */
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: #93ff2d;
+    box-shadow: -1px 2px 20px 13px rgba(0, 255, 13, 0.365);
+    /* box-shadow: 0 0 0 5px #93ff2d, 0 0 0 10px #93ff2d33, 0 0 0 20px #93ff2d11, 0 0 0 20px #93ff2d, 0 0 0 50px #93ff2d; */
 }

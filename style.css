@@ -68,7 +68,6 @@ body {
     bottom: -80px;
     letter-spacing: 1;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 }
 
 @keyframes animate2 {
@@ -93,13 +92,11 @@ body {
     top: initial;
     bottom: 12px;
     left: 12px;
-    /* right: 12px; */
     border-radius: 50%;
     width: 15px;
     height: 15px;
     background: #fc0202;
     box-shadow: -1px 2px 20px 13px rgba(255, 0, 17, 0.365);
-    /* box-shadow: 0 0 0 5px #fc0202, 0 0 0 10px #24ecff33, 0 0 0 20px #fc020211, 0 0 0 20px #fc0202, 0 0 0 50px #fc0202; */
 }
 
 .contnr .ring:nth-child(2)::before {
@@ -108,11 +105,12 @@ body {
     top: initial;
     bottom: 12px;
     left: 12px;
-    /* right: 12px; */
     border-radius: 50%;
     width: 15px;
     height: 15px;
     background: #93ff2d;
     box-shadow: -1px 2px 20px 13px rgba(0, 255, 13, 0.365);
-    /* box-shadow: 0 0 0 5px #93ff2d, 0 0 0 10px #93ff2d33, 0 0 0 20px #93ff2d11, 0 0 0 20px #93ff2d, 0 0 0 50px #93ff2d; */
 }
+
+
+/* THREE DOTS */

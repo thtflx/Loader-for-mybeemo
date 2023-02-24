@@ -1,1 +1,1 @@
-# Magic preloader for mybeemo
+# Magic preloader for mybeemo.
